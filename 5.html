@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        /* Mengatur Font dan Warna Dasar */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigasi */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10%;
+            background-color: rgba(18, 18, 18, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav h1 {
+            font-size: 24px;
+            color: #00d2ff; /* Warna aksen biru neon */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d2ff;
+        }
+
+        /* Hero Section (Halaman Utama) */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h2 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        header h2 span {
+            color: #00d2ff;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #aaaaaa;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background-color: #00d2ff;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Section Global */
+        section {
+            padding: 100px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        /* Etalase Proyek */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 210, 255, 0.2);
+        }
+
+        .project-card h3 {
+            color: #00d2ff;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0a0a0a;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <h1>MyPorto.</h1>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Halaman Utama -->
+    <header id="beranda">
+        <h2>Halo, Saya <span>[Nama Kamu]</span></h2>
+        <p>Saya seorang [Profesi Kamu, misal: Web Developer / Desainer Grafis] yang antusias menciptakan karya luar biasa yang berfokus pada pengalaman pengguna dan hasil nyata.</p>
+        <a href="#proyek" class="btn">Lihat Karya Saya</a>
+    </header>
+
+    <!-- Tentang Saya -->
+    <section id="tentang">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p style="text-align: center; color: #aaaaaa; max-width: 700px; margin: 0 auto;">
+            Saya memiliki pengalaman lebih dari [X] tahun di bidang [Bidangmu]. Saya sangat menyukai tantangan baru dan selalu berusaha memberikan solusi terbaik untuk setiap masalah. Alat yang biasa saya gunakan adalah [Sebutkan tools/skill, misal: Figma, React, Adobe Illustrator].
+        </p>
+    </section>
+
+    <!-- Etalase Proyek -->
+    <section id="proyek">
+        <h2 class="section-title">Proyek Terbaik</h2>
+        <div class="projects-grid">
+            <!-- Proyek 1 -->
+            <div class="project-card">
+                <h3>Nama Proyek 1</h3>
+                <p>Deskripsi singkat tentang proyek ini. Apa masalah yang diselesaikan dan apa peran kamu di sini. Hasil akhirnya sangat memuaskan klien.</p>
+            </div>
+            <!-- Proyek 2 -->
+            <div class="project-card">
+                <h3>Nama Proyek 2</h3>
+                <p>Deskripsi singkat tentang proyek ini. Apa masalah yang diselesaikan dan apa peran kamu di sini. Meningkatkan penjualan hingga 30%.</p>
+            </div>
+            <!-- Proyek 3 -->
+            <div class="project-card">
+                <h3>Nama Proyek 3</h3>
+                <p>Deskripsi singkat tentang proyek ini. Aplikasi yang dibangun dari nol dengan menggunakan teknologi terbaru untuk efisiensi data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+        <h2 class="section-title">Mari Bekerja Sama</h2>
+        <p style="text-align: center; color: #aaaaaa; margin-bottom: 30px;">
+            Tertarik untuk berkolaborasi atau sekadar menyapa? Jangan ragu untuk menghubungi saya!
+        </p>
+        <div style="text-align: center;">
+            <a href="mailto:emailkamu@gmail.com" class="btn">Kirim Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 [Nama Kamu]. Dibuat dengan semangat.</p>
+    </footer>
+
+</body>
+</html>
